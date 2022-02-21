@@ -1,3 +1,5 @@
+package main.java;
+
 /**
  * Interface donde se declaran los metodos a utilizar sin la implementacion de los mismos.
  */

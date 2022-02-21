@@ -1,6 +1,8 @@
+package main.java;
+
 import java.util.Iterator;
 
-class DELinkList<T> implements IDELinkList<T>, Iterable<T>{
+public class DELinkList<T> implements IDELinkList<T>, Iterable<T>{
     private DELink<T> first;
     private DELink<T> last;
     private int size = 0;

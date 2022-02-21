@@ -304,8 +304,8 @@ public class DoublyLinkList<T extends Orderable> {
                 }
             } else {
                 DoublyLink<T> temp = first;
-                int i = posDel - 1;
-                while (temp != null && i > 1) { // llega antes del nodo por eliminar
+                int i = posDel;
+                while (temp != null && i > 1) { // llega al nodo por eliminar
                     temp = temp.getNext();
                     i--;
                 }
@@ -315,6 +315,8 @@ public class DoublyLinkList<T extends Orderable> {
                     }
                     if (temp.getPrev() != null) {
                         temp.getPrev().setNext(temp.getNext());
+                    }else{
+                        first = temp.getNext();
                     }
                     eliminado = true;
                 }
@@ -386,11 +388,10 @@ public class DoublyLinkList<T extends Orderable> {
     public void replaceAtWith(int pos, DoublyLink<T> doublyLink) throws ExcepcionDynamicList {
         if (pos > 0) {
             DoublyLink<T> temp = first;
-            DoublyLink<T> tempAnterior = null;
             int i = pos;
             boolean reemplazo = false;
             while (temp != null && i > 1) { // llega antes del nodo por eliminar
-                tempAnterior = temp;
+                //tempAnterior = temp;
                 temp = temp.getNext();
                 i--;
             }

@@ -1,3 +1,5 @@
+package main.java;
+
 /**
  * clase que permite crear un nodo y proporciona los métodos necesarios para
  * gestionarlo
