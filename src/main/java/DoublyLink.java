@@ -3,7 +3,11 @@ package main.java;
 import main.java.utils.Orderable;
 
 /**
+ * Nodo con enlace siguiente y anterior
+ * 
  * @author tonycituk
+ * 
+ * 
  */
 public class DoublyLink<T extends Orderable> {
 
@@ -85,23 +89,28 @@ public class DoublyLink<T extends Orderable> {
         this.next = next;
     }
 
-
     /**
      * <p>
      * Establece un enlace entre el nodo que llama el método y
      * el nodo que se desea sea su anterio.
      * </p>
      * 
-     * @param prev El nodo que será enlazado como nodo siguiente del nodo que llama al
-     *          método.
+     * @param prev El nodo que será enlazado como nodo siguiente del nodo que llama
+     *             al
+     *             método.
      * 
      * 
      */
     public void setPrev(DoublyLink<T> prev) {
         this.prev = prev;
     }
-    
-    public int getValor(){
+
+    /**
+     * Obtiene un valor a través del método getValue de la interface Orderable
+     * @return Valor retornado por getValue de un Orderable
+     * @see {@link main.java.utils.Orderable}
+     */
+    public int getValor() {
         return dData.getValue();
     }
 
