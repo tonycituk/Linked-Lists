@@ -29,7 +29,7 @@ jobs:
           with:
             distribution: 'zulu' # See 'Supported distributions' for available options
             java-version: '17'
-        - run: javadoc -sourcepath ./src -d ./docs -subpackages main.java
+        - run: javadoc -sourcepath ./src -d ./docs -subpackages main.java --ignore-source-errors -Xdoclint:none
         - name: Deploy 🚀
           uses: JamesIves/github-pages-deploy-action@v4.2.3
           with:
