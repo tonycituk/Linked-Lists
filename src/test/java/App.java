@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import main.java.*;
+import main.java.utils.ExcepcionDynamicList;
 public class App {
     public static void main(String[] args) throws Exception {
         //this.usuarios = new ArrayList <Usuario>();

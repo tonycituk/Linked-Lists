@@ -13,7 +13,7 @@ public class Link<T> {
      * Este método permite crear un nuevo nodo. 
      * </p>
      * 
-     * @param dd El tipo de dato que será asignado al campo de dato del nodo.
+     * @param dd El objeto que será asignado al campo de dato del nodo.
      * 
      */
     public Link(T dd) {

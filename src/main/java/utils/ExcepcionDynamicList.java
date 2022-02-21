@@ -1,4 +1,4 @@
-package main.java;
+package main.java.utils;
 /** 
  * <p>
  * Clase que permite crear las excepciones necesarias cuando suceda algún error en las operaciones de LinkList

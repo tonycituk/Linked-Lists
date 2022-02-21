@@ -1,5 +1,7 @@
 package main.java;
 
+import main.java.utils.ExcepcionDynamicList;
+
 /** 
  * <p>
  * Clase que permite crear una lista que almacena nodos de tipo Link y ofrece métodos para realizar operaciones sobre la lista
@@ -71,7 +73,7 @@ public class LinkList<T>{
      * Este método permite insertar un nodo nuevo antes de algún nodo existente.
      * </p>
      * 
-     * @param objRef El dato existente en alguno de los nodos de la lista, que servirá de referencia para insertar antes.
+     * @param objRef El dato existente en alguno de los nodos de la lista, que servirá de referencia para insertar antes de él.
      * @param objNew El nuevo dato que se asignará a un nuevo nodo que será insertado antes del nodo de referencia.
      * 
      */
